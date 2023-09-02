@@ -1,0 +1,48 @@
+### welcome
+GET http://localhost:9999
+
+### register
+POST http://localhost:9999/api/v1/register
+content-type: application/json
+
+{
+  "name":"Abhijit Karmakar",
+  "email":"abhijit1234@gmail.com",
+  "password":"admin123"
+}
+
+
+### login
+POST http://localhost:9999/api/v1/login
+content-type: application/json
+
+{
+  "email":"abhijit123@gmail.com",
+  "password":"admin123"
+}
+
+
+### get user
+GET  http://localhost:9999/api/v1/getUser
+
+### forgot user
+POST http://localhost:9999/api/v1/forgotUser
+content-type: application/json
+
+{
+  "email":"abhijit1234@gmail.com",
+  "password":"admin123"
+}
+
+### reset user
+GET http://localhost:9999/api/v1/resetUser
+
+
+### new user
+POST http://localhost:9999/api/v1/newUser
+content-type: application/json
+
+{
+  "email":"abhijit123@gmail.com",
+  "password":"admin123"
+}
